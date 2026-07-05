@@ -1,0 +1,191 @@
+:root{
+    --primary:#1f3c88;
+    --secondary:#f4f4f4;
+    --accent:#0f9d58;
+    --dark:#222;
+    --light:#fff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:#fafafa;
+    color:var(--dark);
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+    background:var(--primary);
+    color:white;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.logo img{
+    width:50px;
+}
+
+.logo span{
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+#menu{
+    font-size:2rem;
+    border:none;
+    background:none;
+    color:white;
+    cursor:pointer;
+}
+
+nav{
+    display:none;
+    flex-direction:column;
+    background:var(--primary);
+}
+
+nav.open{
+    display:flex;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:1rem;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+nav a:hover{
+    background:#16316f;
+}
+
+nav a.active{
+    background:#10285b;
+}
+
+main{
+    padding:1rem;
+}
+
+h1{
+    margin-bottom:1rem;
+}
+
+section{
+    margin-bottom:2rem;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(0,0,0,.1);
+    overflow:hidden;
+}
+
+section h2{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:.75rem;
+}
+
+section p,
+section ul{
+    padding:1rem;
+}
+
+.photo{
+    text-align:center;
+}
+
+.photo img{
+    width:220px;
+    margin:1rem auto;
+    border-radius:10px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:.75rem;
+    flex-wrap:wrap;
+    padding:1rem;
+}
+
+.buttons button{
+    padding:.6rem 1.2rem;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:var(--primary);
+    color:white;
+    font-weight:bold;
+}
+
+.buttons button:hover{
+    background:#16316f;
+}
+
+#course-container{
+    display:grid;
+    gap:.75rem;
+    padding:1rem;
+}
+
+.course{
+    padding:1rem;
+    text-align:center;
+    border-radius:6px;
+    background:#ddd;
+    font-weight:bold;
+}
+
+.course.completed{
+    background:var(--accent);
+    color:white;
+}
+
+#credits{
+    text-align:center;
+    font-weight:bold;
+    padding-bottom:1rem;
+}
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:1.5rem;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin-bottom:1rem;
+}
+
+.social img{
+    width:36px;
+    transition:.3s;
+}
+
+.social img:hover{
+    transform:scale(1.1);
+}

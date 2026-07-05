@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emmanuel Eze | WDD 231 Course Home Page</title>
+
+    <meta name="description" content="Emmanuel Eze's WDD 231 course home page featuring responsive web design, HTML, CSS, JavaScript, and course projects.">
+    <meta name="author" content="Emmanuel Eze">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.webp" alt="Site Logo">
+            <span>Emmanuel Eze</span>
+        </div>
+
+        <button id="menu" aria-label="Open Navigation">
+            ☰
+        </button>
+
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <a href="index.html" class="active" aria-current="page">Home</a>
+
+        <a href="chamber/index.html">
+            Chamber Project
+        </a>
+
+        <a href="final/index.html">
+            Final Project
+        </a>
+
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+
+        <h1>Home</h1>
+
+        <div class="top-grid">
+
+            <!-- ABOUT ME -->
+            <section>
+
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is Emmanuel Eze. I am passionate about web
+                    development and software engineering. I enjoy learning new
+                    technologies, building responsive websites, and creating
+                    applications that solve real-world problems. This course
+                    helps me improve my HTML, CSS, JavaScript, and responsive
+                    web design skills...
+                </p>
+
+            </section>
+
+            <!-- STUDENT PHOTO -->
+            <section class="photo">
+
+                <h2>Student Photo</h2>
+
+                <img
+                    src="images/profile.webp"
+                    alt="Photo of Emmanuel Eze">
+
+            </section>
+
+        </div>
+
+        <!-- COURSE CERTIFICATE -->
+        <section>
+
+            <h2>Web Certificate Courses</h2>
+
+            <div class="buttons">
+
+                <button id="all">All</button>
+
+                <button id="cse">CSE</button>
+
+                <button id="wdd">WDD</button>
+
+            </div>
+
+            <div id="course-container"></div>
+
+            <p id="credits"></p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="social">
+
+            <a
+                href="https://github.com/Kors05"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit my GitHub profile">
+
+                <img
+                    src="images/github.webp"
+                    alt="GitHub">
+
+            </a>
+
+            <a
+                href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit my LinkedIn profile">
+
+                <img
+                    src="images/linkedin.webp"
+                    alt="LinkedIn">
+
+            </a>
+
+            <a
+                href="https://x.com/YOUR_USERNAME"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit my X profile">
+
+                <img
+                    src="images/xlogo.webp"
+                    alt="X">
+
+            </a>
+
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Emmanuel Eze • Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
