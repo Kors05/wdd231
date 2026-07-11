@@ -22,13 +22,18 @@
         padding: 1rem 2rem;
     }
 
-    .branding h1 {
-        font-size: 1.8rem;
-    }
+    .site-logo{
+    width:170px;
+    height:auto;
+}
 
-    .branding span {
-        font-size: 1rem;
-    }
+.site-title{
+    font-size:2.5rem;
+}
+
+.site-subtitle{
+    font-size:1.4rem;
+}
 
     /* Hide Hamburger */
 
@@ -71,10 +76,12 @@
         padding: 2rem;
     }
 
-    main h2 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
+    main h1{
+    font-size:2.5rem;
+    margin-bottom:2rem;
+    color:var(--primary);
+    font-family:var(--heading);
+}
 
     /* ================= BUTTONS ================= */
 
