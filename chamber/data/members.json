@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Jabi Lake Mall",
+    "tagline": "Shopping • Dining • Entertainment",
+    "address": "Bala Sokoto Way, Jabi, Abuja",
+    "phone": "+234 9 291 9090",
+    "email": "info@jabilakemall.com",
+    "website": "https://jabilakemall.com",
+    "image": "jabi_lake.webp",
+    "membership": 3
+  },
+  {
+    "name": "Transcorp Hilton Abuja",
+    "tagline": "Luxury Hotel & Conference Centre",
+    "address": "1 Aguiyi Ironsi Street, Maitama, Abuja",
+    "phone": "+234 9 461 3000",
+    "email": "abuja.reservations@hilton.com",
+    "website": "https://www.hilton.com",
+    "image": "transcorp_hilton.webp",
+    "membership": 3
+  },
+  {
+    "name": "Julius Berger Nigeria Plc",
+    "tagline": "Engineering Excellence",
+    "address": "Utako District, Abuja",
+    "phone": "+234 9 291 7800",
+    "email": "info@julius-berger.com",
+    "website": "https://www.julius-berger.com",
+    "image": "julius_berger.webp",
+    "membership": 3
+  },
+  {
+    "name": "Ceddi Plaza",
+    "tagline": "Business • Shopping • Lifestyle",
+    "address": "Central Business District, Abuja",
+    "phone": "+234 9 870 8000",
+    "email": "info@ceddiplaza.com",
+    "website": "https://ceddiplaza.com",
+    "image": "ceddi_plaza.webp",
+    "membership": 2
+  },
+  {
+    "name": "SPAR Novare Gateway",
+    "tagline": "Your Favourite Supermarket",
+    "address": "Lugbe, Abuja",
+    "phone": "+234 803 111 2233",
+    "email": "info@sparnigeria.com",
+    "website": "https://sparnigeria.com",
+    "image": "spar_logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "BluCabana",
+    "tagline": "Restaurant • Pool • Resort",
+    "address": "Mabushi, Abuja",
+    "phone": "+234 9 290 1000",
+    "email": "info@blucabana.com",
+    "website": "https://blucabana.com",
+    "image": "blucabana.webp",
+    "membership": 2
+  },
+  {
+    "name": "ZectaBridge Ltd",
+    "tagline": "Technology & Business Solutions",
+    "address": "Life Camp, Abuja",
+    "phone": "+234 806 001 8752",
+    "email": "info@zectabridge.com",
+    "website": "https://www.zectabridge.com",
+    "image": "zectabridge.webp",
+    "membership": 1
+  }
+]

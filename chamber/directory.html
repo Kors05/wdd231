@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Directory | Abuja Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Explore businesses and organizations that are members of the Abuja Chamber of Commerce.">
+
+    <meta name="author"
+        content="Emmanuel Eze">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+        content="Abuja Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Business Directory of Abuja Chamber Members">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:image"
+        content="https://kors05.github.io/wdd231/chamber/images/logo.webp">
+
+    <meta property="og:url"
+        content="https://kors05.github.io/wdd231/chamber/directory.html">
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+        href="images/favicon.ico">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+
+    <link rel="stylesheet"
+        href="styles/normalize.css">
+
+    <link rel="stylesheet"
+        href="styles/small.css">
+
+    <link rel="stylesheet"
+        href="styles/larger.css">
+
+    <!-- Scripts -->
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/darkmode.js" defer></script>
+
+    <script src="scripts/directory.js" defer></script>
+
+    <script src="scripts/dates.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="branding">
+
+        <img src="images/chamber_logo.png"
+            alt="Abuja Chamber Logo"
+            width="150"
+            height="150">
+
+        <div>
+
+            <h1>Abuja Chamber</h1>
+
+            <span>of Commerce</span>
+
+        </div>
+
+    </div>
+
+    <div class="header-controls">
+
+        <button id="modeButton"
+            aria-label="Toggle Dark Mode">
+
+            🌙
+
+        </button>
+
+        <button id="menuButton"
+            aria-label="Open Menu">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+<nav id="primaryNav">
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a class="active"
+                href="directory.html">Directory</a></li>
+
+        <li><a href="discover.html">Discover</a></li>
+
+        <li><a href="join.html">Join</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+    <h2>Directory</h2>
+
+    <div class="view-buttons">
+
+        <button id="gridView">
+
+            ⬛ Grid
+
+        </button>
+
+        <button id="listView">
+
+            ☰ List
+
+        </button>
+
+    </div>
+
+    <section id="members"
+        class="grid-view">
+
+    </section>
+
+</main>
+
+<footer>
+
+    <section>
+
+        <h3>Abuja Chamber of Commerce</h3>
+
+        <p>
+            Central Business District
+            <br>
+            Abuja, Nigeria
+        </p>
+
+        <p>
+            info@abujachamber.org
+        </p>
+
+        <p>
+            +234 803 123 4567
+        </p>
+
+    </section>
+
+    <section class="social">
+
+        <a href="#">
+            <img src="images/github.webp"
+                alt="Github"
+                width="36"
+                height="36">
+        </a>
+
+        <a href="#">
+            <img src="images/linkedin.webp"
+                alt="LinkedIn"
+                width="36"
+                height="36">
+        </a>
+
+        <a href="#">
+            <img src="images/xlogo.webp"
+                alt="X"
+                width="36"
+                height="36">
+        </a>
+
+    </section>
+
+    <section>
+
+        <p>
+
+            WDD231 Chamber Project
+
+        </p>
+
+        <p>
+
+            Emmanuel Eze
+
+        </p>
+
+        <p>
+
+            © <span id="year"></span>
+
+        </p>
+
+        <p>
+
+            Last Modified
+
+        </p>
+
+        <span id="lastModified"></span>
+
+    </section>
+
+</footer>
+
+</body>
+
+</html>

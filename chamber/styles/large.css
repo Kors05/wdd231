@@ -1,0 +1,180 @@
+/* ==========================================
+   WDD 231 Chamber Project
+   larger.css
+   Desktop Styles
+==========================================*/
+
+@media only screen and (min-width: 768px) {
+    .card-body{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    align-items:start;
+    gap:1rem;
+}
+
+.member-info{
+    text-align:left;
+}
+
+    /* ================= HEADER ================= */
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .branding h1 {
+        font-size: 1.8rem;
+    }
+
+    .branding span {
+        font-size: 1rem;
+    }
+
+    /* Hide Hamburger */
+
+    #menuButton {
+        display: none;
+    }
+
+    /* ================= NAVIGATION ================= */
+
+    nav {
+        display: block !important;
+        background: var(--primary);
+        box-shadow: var(--shadow);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+        transition: .3s;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,.15);
+    }
+
+    /* ================= MAIN ================= */
+
+    main {
+        padding: 2rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* ================= BUTTONS ================= */
+
+    .view-buttons {
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    .view-buttons button {
+        font-size: 1rem;
+    }
+
+    /* ================= GRID ================= */
+
+   .grid-view{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:2rem;
+}
+
+.member-card{
+    min-height:420px;
+}
+
+
+    /* ================= LIST VIEW ================= */
+
+    .list-view {
+        gap: 0;
+    }
+
+    .list-view .member-card {
+
+        display: grid;
+
+        grid-template-columns:
+            220px
+            2fr
+            180px
+            220px;
+
+        align-items: center;
+
+        gap: 1rem;
+
+        border-radius: 0;
+
+        padding: 1.25rem;
+
+        margin: 0;
+    }
+
+    .list-view .member-card:nth-child(even) {
+        background: #eef5ff;
+    }
+
+    .list-view .member-card img {
+        display: none;
+    }
+
+    .list-view .member-card h3,
+    .list-view .member-card p,
+    .list-view .member-card a {
+        margin: 0;
+    }
+
+    .list-view .badge {
+        justify-self: end;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 2rem;
+
+        align-items: start;
+    }
+
+    footer section {
+        margin: 0;
+    }
+
+    footer section:nth-child(2) {
+        text-align: center;
+    }
+
+    footer section:last-child {
+        text-align: right;
+    }
+
+    /* ================= HOVER EFFECTS ================= */
+
+    .member-card:hover {
+        transform: translateY(-8px);
+    }
+
+}

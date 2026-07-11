@@ -1,0 +1,514 @@
+/* ===========================================
+   WDD 231 Chamber Project
+   Abuja Chamber of Commerce
+   Author: Emmanuel Eze
+=========================================== */
+
+:root{
+    --primary:#0B5ED7;
+    --primary-dark:#084298;
+    --secondary:#EAF4FF;
+    --accent:#D4AF37;
+    --text:#212529;
+    --white:#ffffff;
+    --background:#f5f7fb;
+    --border:#d9d9d9;
+    --shadow:0 4px 10px rgba(0,0,0,.10);
+
+    --heading:"Poppins",sans-serif;
+    --body:"Roboto",sans-serif;
+}
+
+/* =============== RESET =============== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:var(--body);
+    background:var(--background);
+    color:var(--text);
+    line-height:1.6;
+}
+
+/* =============== HEADER =============== */
+
+header{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1rem;
+
+    box-shadow:var(--shadow);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+}
+
+.branding{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+}
+
+.site-logo{
+    width:95px;
+    height:auto;
+    display:block;
+}
+
+.branding h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: var(--heading);
+    line-height: 1.1;
+}
+
+.branding span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.header-controls{
+
+    display:flex;
+
+    gap:.5rem;
+}
+
+.header-controls button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:1.5rem;
+
+    color:var(--primary);
+}
+
+/* =============== NAVIGATION =============== */
+
+nav{
+
+    display:none;
+
+    background:var(--primary);
+}
+
+nav.open{
+
+    display:block;
+}
+
+nav ul{
+
+    list-style:none;
+}
+
+nav li{
+
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+nav a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:1rem;
+}
+
+nav a:hover{
+
+    background:rgba(255,255,255,.12);
+}
+
+nav a.active{
+
+    background:var(--accent);
+
+    color:black;
+
+    font-weight:bold;
+}
+
+/* =============== MAIN =============== */
+
+main{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:1rem;
+}
+
+main h2{
+
+    margin:1rem 0;
+
+    color:var(--primary);
+
+    font-family:var(--heading);
+
+    font-size:2rem;
+}
+
+/* =============== GRID/LIST BUTTONS =============== */
+
+.view-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    margin:1.5rem 0;
+}
+
+.view-buttons button{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:.8rem 1.5rem;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.view-buttons button:hover{
+
+    background:var(--primary-dark);
+}
+
+/* =============== MEMBER GRID =============== */
+
+.grid-view{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.5rem;
+}
+
+.member-card{
+    background:#fff;
+    border-radius:12px;
+    padding:1.5rem;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.member-card img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin:auto;
+    display:block;
+    margin-bottom:1rem;
+}
+/* =============== CARD =============== */
+/* Card Layout */
+
+.card-body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    margin-top:1rem;
+}
+
+.member-info{
+    text-align:left;
+    width:100%;
+}
+
+.member-info p{
+    margin-bottom:.75rem;
+}
+
+.member-info a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+.member-info a:hover{
+    text-decoration:underline;
+}
+.member-card{
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:1.5rem;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.member-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.member-card h3{
+
+    color:var(--primary);
+
+    font-family:var(--heading);
+
+    margin-bottom:.3rem;
+}
+
+.member-card .tagline{
+
+    color:#666;
+
+    font-style:italic;
+
+    margin-bottom:1rem;
+}
+
+.member-card hr{
+
+    margin:1rem 0;
+
+    border:0;
+
+    border-top:1px solid var(--border);
+}
+
+.member-card img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    margin-bottom:1rem;
+}
+
+.member-card p{
+
+    margin:.35rem 0;
+
+    font-size:.95rem;
+}
+
+.member-card a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+}
+
+.member-card a:hover{
+
+    text-decoration:underline;
+}
+
+/* Membership Badge */
+
+.badge{
+
+    display:inline-block;
+
+    margin-top:1rem;
+
+    padding:.35rem .9rem;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:.85rem;
+
+    font-weight:bold;
+}
+
+.gold{
+
+    background:#D4AF37;
+}
+
+.silver{
+
+    background:#6c757d;
+}
+
+.member{
+
+    background:var(--primary);
+}
+
+/* =============== LIST VIEW =============== */
+
+.list-view{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+}
+
+.list-view .member-card{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    text-align:left;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    border-bottom:1px solid var(--border);
+}
+
+.list-view .member-card img{
+
+    display:none;
+}
+
+.list-view .member-card hr{
+
+    display:none;
+}
+
+/* =============== FOOTER =============== */
+
+footer{
+
+    margin-top:3rem;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:2rem 1rem;
+}
+
+footer section{
+
+    margin-bottom:2rem;
+}
+
+footer h3{
+
+    margin-bottom:.5rem;
+
+    font-family:var(--heading);
+}
+
+footer a{
+
+    color:white;
+
+    text-decoration:none;
+}
+
+.social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+}
+
+.social img{
+
+    width:40px;
+
+    transition:.3s;
+}
+
+.social img:hover{
+
+    transform:scale(1.15);
+}
+
+/* =============== DARK MODE =============== */
+
+body.dark{
+
+    background:#121212;
+
+    color:#eee;
+}
+
+body.dark header{
+
+    background:#1b1b1b;
+}
+
+body.dark .member-card{
+
+    background:#232323;
+
+    color:white;
+}
+
+body.dark footer{
+
+    background:#000;
+}
+
+/* =============== ACCESSIBILITY =============== */
+
+button:focus,
+a:focus{
+
+    outline:3px solid var(--accent);
+
+    outline-offset:3px;
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+}
