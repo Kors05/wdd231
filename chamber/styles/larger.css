@@ -49,12 +49,13 @@
         box-shadow: var(--shadow);
     }
 
-    nav ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 1200px;
-        margin: auto;
+    nav ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    max-width:1200px;
+    margin:0 auto;
     }
 
     nav li {
@@ -101,9 +102,11 @@
     grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
     gap:2rem;
 }
-
-.member-card{
-    min-height:420px;
+    .member-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:460px;
 }
 
 
@@ -134,8 +137,8 @@
         margin: 0;
     }
 
-    .list-view .member-card:nth-child(even) {
-        background: #eef5ff;
+    .list-view .member-card:nth-child(even){
+    background:var(--secondary);
     }
 
     .list-view .member-card img {
