@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Abuja Chamber of Commerce</title>
+
+    <meta name="description" content="Explore the official Abuja Chamber of Commerce directory featuring local businesses, member organizations, and opportunities for growth and collaboration.">
+
+    <meta name="author"
+        content="Emmanuel Eze">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abuja Chamber of Commerce | Connecting Businesses and Building Community">
+
+    <meta property="og:description" content="Welcome to the Abuja Chamber of Commerce. Discover local businesses, upcoming events, member spotlights, business resources, and opportunities to connect, collaborate, and grow in Abuja.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://kors05.github.io/wdd231/chamber/index.html">
+
+    <meta property="og:image" content="https://kors05.github.io/wdd231/chamber/images/hero.webp">
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+        href="images/favicon.ico">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+
+    <link rel="stylesheet"
+        href="styles/normalize.css">
+
+    <link rel="stylesheet"
+        href="styles/small.css">
+
+    <link rel="stylesheet"
+        href="styles/larger.css">
+
+    <!-- Scripts -->
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/darkmode.js" defer></script>
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+
+    <script src="scripts/dates.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="branding">
+
+    <img src="images/logo.webp"
+         alt="Abuja Chamber Logo"
+         class="site-logo">
+
+    <div class="site-name">
+        <p class="site-title">Abuja Chamber</p>
+        <p class="site-subtitle">of Commerce</p>
+    </div>
+
+</div>
+
+    <div class="header-controls">
+
+        <button id="modeButton"
+            aria-label="Toggle Dark Mode">
+
+            🌙
+
+        </button>
+
+        <button id="menuButton"
+            aria-label="Open Menu">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+<nav id="primaryNav">
+
+    <ul>
+
+        <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="discover.html">Discover</a></li>
+    <li><a href="join.html">Join</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+<h1 class="visually-hidden">Abuja Chamber of Commerce Home</h1>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <img src="images/hero.webp"
+         alt="Abuja skyline">
+
+    <div class="hero-content">
+
+        <h2>Building Business. Creating Opportunities.</h2>
+
+        <p>
+            The Abuja Chamber of Commerce connects businesses,
+            entrepreneurs, and investors to strengthen our economy
+            and create lasting partnerships.
+        </p>
+
+        <a href="join.html" class="cta-button">
+            Become a Member
+        </a>
+
+    </div>
+
+</section>
+
+<div class="home-grid">
+
+<!-- EVENTS -->
+
+<section class="events">
+
+<h2>Upcoming Events</h2>
+
+<div class="event">
+
+<h3>Business Networking Breakfast</h3>
+
+<p><strong>Date:</strong> July 30, 2026</p>
+
+<p>
+Meet fellow entrepreneurs and expand your professional network.
+</p>
+
+</div>
+
+<div class="event">
+
+<h3>SME Growth Workshop</h3>
+
+<p><strong>Date:</strong> August 15, 2026</p>
+
+<p>
+Practical business strategies for small and medium enterprises.
+</p>
+
+</div>
+
+</section>
+
+<!-- WEATHER -->
+
+<section class="weather">
+
+<h2>Weather in Abuja</h2>
+
+<div class="weather-current">
+
+<span id="current-temp"></span>°C
+
+</div>
+
+<p id="weather-description"></p>
+
+<h3>3-Day Forecast</h3>
+
+<div id="forecast" class="forecast"></div>
+
+</section>
+
+</div>
+
+<!-- SPOTLIGHTS -->
+
+<section class="spotlights">
+
+<h2>Business Spotlights</h2>
+
+<p>
+Meet some of our Gold and Silver Chamber Members.
+</p>
+
+<div id="spotlight-container"
+     class="spotlight-container">
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <section>
+
+        <h2>Abuja Chamber of Commerce</h2>
+
+        <p>
+            Central Business District
+            <br>
+            Abuja, Nigeria
+        </p>
+
+        <p>
+            info@abujachamber.org
+        </p>
+
+        <p>
+            +234 803 123 4567
+        </p>
+
+    </section>
+
+    <div class="social">
+
+        <a href="#">
+            <img src="images/github.webp"
+                alt="Github"
+                width="36"
+                height="36">
+        </a>
+
+        <a href="#">
+            <img src="images/linkedin.webp"
+                alt="LinkedIn"
+                width="36"
+                height="36">
+        </a>
+
+        <a href="#">
+            <img src="images/xlogo.webp"
+                alt="X"
+                width="36"
+                height="36">
+        </a>
+
+    </div>
+
+    <div>
+
+        <p>WDD231 Chamber Project</p>
+
+        <p>
+
+            Emmanuel Eze
+
+        </p>
+
+        <p>
+
+            © <span id="year"></span>
+
+        </p>
+
+        <p>
+
+            Last Modified
+
+        </p>
+
+        <span id="lastModified"></span>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
