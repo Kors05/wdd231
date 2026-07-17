@@ -186,48 +186,50 @@
     .member-card:hover {
         transform: translateY(-8px);
     }
+    /* ================= HOME PAGE ================= */
 
-    /* ==========================================
-   HOME PAGE - DESKTOP LAYOUT
-========================================== */
+.hero img {
+    height: 500px;
+}
 
-@media only screen and (min-width:768px) {
+.hero-content h2 {
+    font-size: 3rem;
+}
 
-    .home-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 2rem;
-        align-items: start;
-    }
+.hero-content p {
+    font-size: 1.15rem;
+}
 
-    .events {
-        grid-column: 1;
-    }
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
 
-    .weather {
-        grid-column: 2;
-    }
+.events {
+    grid-column: 1;
+}
 
-    .spotlights {
-        grid-column: 1 / 3;
-    }
+.weather {
+    grid-column: 2;
+}
 
-    .spotlight-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
+.spotlights {
+    grid-column: 1 / 3;
+}
 
-    .hero img {
-        height: 500px;
-    }
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
 
-    .hero-content h2 {
-        font-size: 3rem;
-    }
+.spotlight-card {
+    transition: transform .3s ease;
+}
 
-    .hero-content p {
-        font-size: 1.2rem;
-    }
+.spotlight-card:hover {
+    transform: translateY(-8px);
 }
 }
