@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join the Abuja Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Apply to join the Abuja Chamber of Commerce and gain access to networking opportunities, business resources, exclusive events, and member benefits.">
+
+    <meta name="author" content="Emmanuel Eze">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Join Abuja Chamber of Commerce">
+    <meta property="og:description"
+        content="Become a member of the Abuja Chamber of Commerce and grow your business through networking, events, and exclusive member benefits.">
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="https://kors05.github.io/wdd231/chamber/join.html">
+    <meta property="og:image"
+        content="https://kors05.github.io/wdd231/chamber/images/hero.webp">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="branding">
+
+<img class="site-logo"
+src="images/logo.webp"
+alt="Abuja Chamber Logo">
+
+<div>
+
+<h1 class="site-title">
+Abuja Chamber
+</h1>
+
+<p class="site-subtitle">
+Connecting Businesses • Building Community
+</p>
+
+</div>
+
+</div>
+
+<div class="header-controls">
+
+<button id="menuButton"
+aria-label="Open Navigation">
+☰
+</button>
+
+</div>
+
+</header>
+
+<nav id="primaryNav">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="directory.html">Directory</a></li>
+
+<li><a href="discover.html">Discover</a></li>
+
+<li><a class="active" href="join.html">Join</a></li>
+
+</ul>
+
+</nav>
+
+<main>
+
+<h1>Become a Chamber Member</h1>
+
+<p class="intro">
+
+Join the Abuja Chamber of Commerce and connect with business leaders,
+networking opportunities, professional training, marketing support,
+and exclusive member events.
+
+</p>
+
+<div class="join-layout">
+
+<section class="application-form">
+
+<form method="get"
+action="thankyou.html">
+
+<label>
+
+First Name
+
+<input
+type="text"
+name="firstname"
+required
+title="Enter your first name"
+autocomplete="given-name">
+
+</label>
+
+<label>
+
+Last Name
+
+<input
+type="text"
+name="lastname"
+required
+title="Enter your last name"
+autocomplete="family-name">
+
+</label>
+
+<label>
+
+Organization Title
+
+<input
+type="text"
+name="organizationtitle"
+title="Your position within the organization"
+autocomplete="organization-title"
+
+pattern="[A-Za-z\\-\\s]{7,}"
+
+placeholder="Business Development Manager">
+
+</label>
+
+<label>
+
+Email Address
+
+<input
+type="email"
+name="email"
+required
+title="Enter your email address"
+
+autocomplete="email"
+
+placeholder="example@email.com">
+
+</label>
+
+<label>
+
+Mobile Phone
+
+<input
+type="tel"
+name="phone"
+required
+
+title="Enter your mobile number"
+
+autocomplete="tel">
+
+</label>
+
+<label>
+
+Business / Organization
+
+<input
+type="text"
+
+name="organization"
+
+required
+
+title="Business name"
+
+autocomplete="organization">
+
+</label>
+
+<label>
+
+Membership Level
+
+<select
+name="membership"
+required>
+
+<option value="">
+Select Membership
+</option>
+
+<option value="np">
+
+NP Membership
+
+</option>
+
+<option value="bronze">
+
+Bronze Membership
+
+</option>
+
+<option value="silver">
+
+Silver Membership
+
+</option>
+
+<option value="gold">
+
+Gold Membership
+
+</option>
+
+</select>
+
+</label>
+
+<label>
+
+Business Description
+
+<textarea
+
+name="description"
+
+rows="6"
+
+title="Describe your organization">
+
+</textarea>
+
+</label>
+
+<input
+type="hidden"
+
+id="timestamp"
+
+name="timestamp">
+
+<input
+
+type="submit"
+
+value="Apply for Membership"
+
+class="submitButton">
+
+</form>
+
+</section>
+<!-- ================= MEMBERSHIP CARDS ================= -->
+
+<aside class="membership-cards">
+
+    <div class="membership-card card1">
+
+        <h2>NP Membership</h2>
+
+        <p>
+            Designed for nonprofit organizations seeking networking,
+            collaboration, and community involvement at no cost.
+        </p>
+
+        <button type="button" data-modal="npModal">
+            Learn More
+        </button>
+
+    </div>
+
+    <div class="membership-card card2">
+
+        <h2>Bronze Membership</h2>
+
+        <p>
+            A great option for small businesses looking to build their
+            professional network and gain visibility.
+        </p>
+
+        <button type="button" data-modal="bronzeModal">
+            Learn More
+        </button>
+
+    </div>
+
+    <div class="membership-card card3">
+
+        <h2>Silver Membership</h2>
+
+        <p>
+            Grow your business with additional advertising,
+            training, and discounted event access.
+        </p>
+
+        <button type="button" data-modal="silverModal">
+            Learn More
+        </button>
+
+    </div>
+
+    <div class="membership-card card4">
+
+        <h2>Gold Membership</h2>
+
+        <p>
+            Our premium membership with maximum exposure,
+            exclusive events, and homepage spotlight advertising.
+        </p>
+
+        <button type="button" data-modal="goldModal">
+            Learn More
+        </button>
+
+    </div>
+
+</aside>
+
+</div>
+
+<!-- ===================== NP MODAL ===================== -->
+
+<dialog id="npModal">
+
+    <h2>NP Membership</h2>
+
+    <p>
+
+        NP Membership is available exclusively to nonprofit organizations.
+
+    </p>
+
+    <ul>
+
+        <li>Free Membership</li>
+
+        <li>Business Directory Listing</li>
+
+        <li>Networking Opportunities</li>
+
+        <li>Community Event Invitations</li>
+
+        <li>Educational Resources</li>
+
+    </ul>
+
+    <button class="closeModal">
+        Close
+    </button>
+
+</dialog>
+
+<!-- ===================== BRONZE MODAL ===================== -->
+
+<dialog id="bronzeModal">
+
+    <h2>Bronze Membership</h2>
+
+    <p>
+
+        Bronze Membership is ideal for growing businesses.
+
+    </p>
+
+    <ul>
+
+        <li>Everything in NP Membership</li>
+
+        <li>Business Training Workshops</li>
+
+        <li>Monthly Newsletter</li>
+
+        <li>Networking Breakfasts</li>
+
+        <li>Business Promotion Opportunities</li>
+
+    </ul>
+
+    <button class="closeModal">
+        Close
+    </button>
+
+</dialog>
+
+<!-- ===================== SILVER MODAL ===================== -->
+
+<dialog id="silverModal">
+
+    <h2>Silver Membership</h2>
+
+    <p>
+
+        Silver Membership offers increased exposure and valuable business
+        development opportunities.
+
+    </p>
+
+    <ul>
+
+        <li>Everything in Bronze Membership</li>
+
+        <li>Event Discounts</li>
+
+        <li>Website Advertising</li>
+
+        <li>Business Workshops</li>
+
+        <li>Priority Networking Events</li>
+
+    </ul>
+
+    <button class="closeModal">
+        Close
+    </button>
+
+</dialog>
+
+<!-- ===================== GOLD MODAL ===================== -->
+
+<dialog id="goldModal">
+
+    <h2>Gold Membership</h2>
+
+    <p>
+
+        Gold Membership provides the highest level of visibility and exclusive
+        Chamber benefits.
+
+    </p>
+
+    <ul>
+
+        <li>Everything in Silver Membership</li>
+
+        <li>Homepage Spotlight Advertising</li>
+
+        <li>Premium Business Listing</li>
+
+        <li>VIP Networking Events</li>
+
+        <li>Priority Sponsorship Opportunities</li>
+
+        <li>Exclusive Leadership Training</li>
+
+    </ul>
+
+    <button class="closeModal">
+        Close
+    </button>
+
+</dialog>
+
+</main>
+
+<footer>
+
+<section>
+
+<h3>Abuja Chamber of Commerce</h3>
+
+<p>
+Abuja, Federal Capital Territory, Nigeria
+</p>
+
+<p>
+info@abujachamber.org
+</p>
+
+<p>
++234 800 123 4567
+</p>
+
+</section>
+
+<section class="social">
+
+<a href="#" aria-label="GitHub">
+<img src="images/github.webp" alt="GitHub">
+</a>
+
+<a href="#" aria-label="LinkedIn">
+<img src="images/linkedin.webp" alt="LinkedIn">
+</a>
+
+<a href="#" aria-label="X">
+<img src="images/xlogo.webp" alt="X">
+</a>
+
+</section>
+
+<section>
+
+<p>
+
+© <span id="year"></span>
+
+Abuja Chamber of Commerce
+
+</p>
+
+<p>
+
+Last Modified:
+<span id="lastModified"></span>
+
+</p>
+
+</section>
+
+</footer>
+
+</body>
+
+</html>
