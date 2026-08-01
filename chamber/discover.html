@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Abuja | Abuja Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Discover Abuja's attractions, landmarks, parks, and cultural destinations through the Abuja Chamber of Commerce.">
+
+    <meta name="author" content="Emmanuel Eze">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Discover Abuja | Abuja Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Explore Abuja's attractions, landmarks, parks, and cultural destinations through the Abuja Chamber of Commerce.">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:url"
+        content="https://kors05.github.io/wdd231/chamber/discover.html">
+
+    <meta property="og:image"
+        content="https://kors05.github.io/wdd231/chamber/images/hero.webp">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <script type="module"
+        src="scripts/discover.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="branding">
+
+            <img class="site-logo"
+                src="images/logo.webp"
+                alt="Abuja Chamber of Commerce Logo"
+                width="150"
+                height="150">
+
+            <div>
+
+                <!-- NOT an H1 -->
+
+                <div class="site-title">
+
+                    Abuja Chamber of Commerce
+
+                </div>
+
+                <p class="site-subtitle">
+
+                    Connecting Businesses • Building Community
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="header-controls">
+
+            <button id="menuButton"
+                aria-label="Open Navigation">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <nav id="primaryNav">
+
+        <ul>
+
+            <li>
+
+                <a href="index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="directory.html">
+
+                    Directory
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a class="active"
+                    href="discover.html">
+
+                    Discover
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="join.html">
+
+                    Join
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <main class="discover-page">
+
+        <h1>
+
+            Discover Abuja
+
+        </h1>
+
+        <section class="discover-hero">
+
+            <p>
+
+                Discover Abuja's remarkable attractions,
+                cultural landmarks, parks, museums,
+                recreational centers, and historical sites.
+                Whether you're visiting, investing,
+                or considering Chamber membership,
+                Abuja offers outstanding opportunities for
+                business, tourism, and community engagement.
+
+            </p>
+
+        </section>
+
+        <aside class="visitor-message">
+
+            <h2>
+
+                Welcome Back
+
+            </h2>
+
+            <p id="visit-message">
+
+                Welcome! Let us know if you have any questions.
+
+            </p>
+
+        </aside>
+
+        <section class="discover-section">
+
+            <h2>
+
+                Places of Interest
+
+            </h2>
+
+            <div id="discover-cards">
+
+                <!-- JavaScript will generate the eight cards here -->
+
+            </div>
+
+        </section>
+                <!-- ===================== FOOTER ===================== -->
+
+    </main>
+
+    <footer>
+
+        <section>
+
+            <h3>Abuja Chamber of Commerce</h3>
+
+            <p>
+                Central Business District
+            </p>
+
+            <p>
+                Abuja, Federal Capital Territory, Nigeria
+            </p>
+
+            <p>
+                info@abujachamber.org
+            </p>
+
+            <p>
+                +234 800 123 4567
+            </p>
+
+        </section>
+
+        <section class="social">
+
+            <a href="#"
+                aria-label="GitHub">
+
+                <img
+                    src="images/github.webp"
+                    alt="GitHub"
+                    width="40"
+                    height="40">
+
+            </a>
+
+            <a href="#"
+                aria-label="LinkedIn">
+
+                <img
+                    src="images/linkedin.webp"
+                    alt="LinkedIn"
+                    width="40"
+                    height="40">
+
+            </a>
+
+            <a href="#"
+                aria-label="X">
+
+                <img
+                    src="images/xlogo.webp"
+                    alt="X"
+                    width="40"
+                    height="40">
+
+            </a>
+
+        </section>
+
+        <section>
+
+            <p>
+
+                &copy;
+                <span id="year"></span>
+
+                Abuja Chamber of Commerce
+
+            </p>
+
+            <p>
+
+                Emmanuel Eze | WDD 231
+
+            </p>
+
+            <p>
+
+                Last Modified:
+                <span id="lastModified"></span>
+
+            </p>
+
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/* ==========================================
+   WDD 231 Chamber Project
+   medium.css
+   Tablet Styles (641px - 1024px)
+========================================== */
+
+@media screen and (min-width: 641px) {
+
+    /* =============================
+       HEADER
+    ============================== */
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .site-logo {
+        width: 120px;
+    }
+
+    .site-title {
+        font-size: 2rem;
+    }
+
+    .site-subtitle {
+        font-size: 1rem;
+    }
+
+    /* =============================
+       HOME PAGE
+    ============================== */
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .weather {
+        grid-column: 1;
+    }
+
+    .events {
+        grid-column: 2;
+    }
+
+    .spotlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* =============================
+       DIRECTORY
+    ============================== */
+
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* =============================
+       JOIN PAGE
+    ============================== */
+
+    .join-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .membership-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* =============================
+       DISCOVER PAGE
+    ============================== */
+
+    .discover-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1.5rem;
+
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    /* Hover effect only on tablet and larger */
+
+    .discover-card img {
+
+        transition:
+            transform .35s ease,
+            filter .35s ease,
+            box-shadow .35s ease;
+
+    }
+
+    .discover-card img:hover {
+
+        transform: scale(1.05);
+
+        filter: brightness(1.08);
+
+        box-shadow: 0 8px 18px rgba(0,0,0,.30);
+
+    }
+
+    /* =============================
+       FOOTER
+    ============================== */
+
+    .footer-content {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 2rem;
+
+        align-items: start;
+
+    }
+
+    .social {
+
+        justify-content: flex-start;
+
+    }
+
+}
