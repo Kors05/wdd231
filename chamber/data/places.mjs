@@ -3,7 +3,7 @@
    places.mjs
    Author: Emmanuel Eze
    Discover Page Data
-========================================== */
+========================================= */
 
 export const places = [
     {
