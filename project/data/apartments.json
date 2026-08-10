@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Green Haven Studio",
+    "location": "Wuse 2, Abuja",
+    "type": "Studio",
+    "price": 85000,
+    "guests": 2,
+    "amenity": "Solar backup"
+  },
+  {
+    "id": 2,
+    "name": "Palm Court Suite",
+    "location": "Maitama, Abuja",
+    "type": "1 Bedroom",
+    "price": 120000,
+    "guests": 2,
+    "amenity": "24/7 power"
+  },
+  {
+    "id": 3,
+    "name": "Cedar View Apartment",
+    "location": "Jabi, Abuja",
+    "type": "2 Bedroom",
+    "price": 150000,
+    "guests": 4,
+    "amenity": "Lake view"
+  },
+  {
+    "id": 4,
+    "name": "Eco Nest Residence",
+    "location": "Gwarinpa, Abuja",
+    "type": "1 Bedroom",
+    "price": 95000,
+    "guests": 2,
+    "amenity": "Solar water heating"
+  },
+  {
+    "id": 5,
+    "name": "Savanna Loft",
+    "location": "Asokoro, Abuja",
+    "type": "2 Bedroom",
+    "price": 175000,
+    "guests": 4,
+    "amenity": "Private balcony"
+  },
+  {
+    "id": 6,
+    "name": "Olive Garden Flat",
+    "location": "Katampe, Abuja",
+    "type": "2 Bedroom",
+    "price": 160000,
+    "guests": 4,
+    "amenity": "Garden access"
+  },
+  {
+    "id": 7,
+    "name": "Harmony Place",
+    "location": "Utako, Abuja",
+    "type": "Studio",
+    "price": 78000,
+    "guests": 2,
+    "amenity": "Fast Wi-Fi"
+  },
+  {
+    "id": 8,
+    "name": "Green Terrace",
+    "location": "Jahi, Abuja",
+    "type": "1 Bedroom",
+    "price": 105000,
+    "guests": 2,
+    "amenity": "Terrace"
+  },
+  {
+    "id": 9,
+    "name": "Acacia Executive",
+    "location": "Central Area, Abuja",
+    "type": "1 Bedroom",
+    "price": 135000,
+    "guests": 2,
+    "amenity": "Work desk"
+  },
+  {
+    "id": 10,
+    "name": "Sunrise Court",
+    "location": "Gudu, Abuja",
+    "type": "2 Bedroom",
+    "price": 145000,
+    "guests": 4,
+    "amenity": "Breakfast option"
+  },
+  {
+    "id": 11,
+    "name": "Bamboo House",
+    "location": "Lugbe, Abuja",
+    "type": "3 Bedroom",
+    "price": 185000,
+    "guests": 6,
+    "amenity": "Family lounge"
+  },
+  {
+    "id": 12,
+    "name": "Rainforest Retreat",
+    "location": "Life Camp, Abuja",
+    "type": "2 Bedroom",
+    "price": 155000,
+    "guests": 4,
+    "amenity": "Quiet courtyard"
+  },
+  {
+    "id": 13,
+    "name": "Sage Apartments",
+    "location": "Kubwa, Abuja",
+    "type": "1 Bedroom",
+    "price": 90000,
+    "guests": 2,
+    "amenity": "Secure parking"
+  },
+  {
+    "id": 14,
+    "name": "Coco Palm Residence",
+    "location": "Wuye, Abuja",
+    "type": "2 Bedroom",
+    "price": 165000,
+    "guests": 4,
+    "amenity": "Gym access"
+  },
+  {
+    "id": 15,
+    "name": "Meadow Executive Suite",
+    "location": "Garki, Abuja",
+    "type": "1 Bedroom",
+    "price": 110000,
+    "guests": 2,
+    "amenity": "Smart TV"
+  }
+]

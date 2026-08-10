@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Browse EcoFriendly Homes serviced apartments in Abuja. Filter stays by type, price, location, and save favourites in your browser.">
+
+    <meta name="author" content="Emmanuel Eze">
+
+    <meta property="og:title"
+        content="Our Stays | EcoFriendly Homes">
+
+    <meta property="og:description"
+        content="Browse EcoFriendly Homes serviced apartments in Abuja. Filter stays by type, price, location, and save favourites in your browser.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" content="./images/logo.svg">
+
+    <meta name="theme-color" content="#2f6f55">
+
+    <link rel="icon"
+        href="./images/favicon.svg"
+        type="image/svg+xml">
+
+    <link rel="stylesheet"
+        href="./styles/styles.css">
+
+    <title>Our Stays | EcoFriendly Homes</title>
+
+</head>
+
+<body>
+
+    <!-- Skip Navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <!-- Logo / Brand -->
+            <a class="brand" href="./index.html">
+
+                <img src="./images/logo.svg"
+                    alt=""
+                    width="44"
+                    height="44">
+
+                <span>
+                    EcoFriendly Homes
+                </span>
+
+            </a>
+
+            <!-- Mobile Navigation Button -->
+            <button class="nav-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-nav">
+
+                ☰
+
+                <span class="sr-only">
+                    Menu
+                </span>
+
+            </button>
+
+            <!-- Navigation -->
+            <nav aria-label="Primary navigation">
+
+                <ul class="nav-list" id="primary-nav">
+
+                    <li>
+                        <a href="./index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="active" href="./apartments.html">
+                            Our Stays
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html">
+                            Book a Stay
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    Our stays
+                </p>
+
+                <h1>
+                    Choose a place that fits your trip.
+                </h1>
+
+                <p>
+                    Explore property data, compare key details,
+                    and open a modal for more information.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Property Directory -->
+        <section class="section" style="padding-top: 10px">
+
+            <div class="container">
+
+                <!-- Property Filters -->
+                <form class="filters"
+                    aria-label="Filter properties">
+
+                    <!-- Search -->
+                    <div class="field">
+
+                        <label for="search">
+                            Search
+                        </label>
+
+                        <input id="search"
+                            type="search"
+                            placeholder="Name, location, amenity">
+
+                    </div>
+
+                    <!-- Apartment Type -->
+                    <div class="field">
+
+                        <label for="type-filter">
+                            Apartment type
+                        </label>
+
+                        <select id="type-filter">
+
+                            <option value="">
+                                All types
+                            </option>
+
+                            <option>
+                                Studio
+                            </option>
+
+                            <option>
+                                1 Bedroom
+                            </option>
+
+                            <option>
+                                2 Bedroom
+                            </option>
+
+                            <option>
+                                3 Bedroom
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Maximum Price -->
+                    <div class="field">
+
+                        <label for="max-price">
+                            Maximum nightly rate (₦)
+                        </label>
+
+                        <input id="max-price"
+                            type="number"
+                            min="0"
+                            step="5000"
+                            placeholder="No limit">
+
+                    </div>
+
+                    <!-- Favourites -->
+                    <label>
+
+                        <input id="favorites-only"
+                            type="checkbox">
+
+                        Favourites only
+
+                    </label>
+
+                </form>
+
+                <!-- Results Count -->
+                <p id="result-count"
+                    aria-live="polite">
+
+                    Loading properties…
+
+                </p>
+
+                <!-- Dynamic Apartment Cards -->
+                <div id="apartment-grid"
+                    class="apartment-grid"
+                    aria-live="polite">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Property Details Modal -->
+    <dialog id="details-modal"
+        class="modal"
+        aria-labelledby="modal-title">
+
+        <div class="modal-content">
+
+            <button id="modal-close"
+                class="modal-close"
+                type="button"
+                aria-label="Close property details">
+
+                ×
+
+            </button>
+
+            <div id="modal-body">
+            </div>
+
+        </div>
+
+    </dialog>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-inner">
+
+            <!-- Footer Brand -->
+            <div>
+
+                <div class="footer-brand">
+
+                    <img src="./images/logo.svg"
+                        alt=""
+                        width="38"
+                        height="38">
+
+                    EcoFriendly Homes
+
+                </div>
+
+                <p class="small">
+                    Comfortable short-stay apartments with practical
+                    eco-friendly features in Abuja.
+                </p>
+
+            </div>
+
+            <!-- Explore Links -->
+            <div>
+
+                <h2 style="font-size: 1rem;">
+                    Explore
+                </h2>
+
+                <div class="footer-links">
+
+                    <a href="./index.html">
+                        Home
+                    </a>
+
+                    <a href="./apartments.html">
+                        Our Stays
+                    </a>
+
+                    <a href="./contact.html">
+                        Book a Stay
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Project Resources -->
+            <div>
+
+                <h2 style="font-size: 1rem;">
+                    Project resources
+                </h2>
+
+                <div class="footer-links">
+
+                    <a href="./attributions.html">
+                        Attributions
+                    </a>
+
+                    <a href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="noopener">
+                        Project Video
+                    </a>
+
+                </div>
+
+                <p class="small">
+
+                    © <span id="year"></span>
+                    EcoFriendly Homes · Emmanuel Eze
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="module"
+        src="./scripts/common.js">
+    </script>
+
+    <script type="module"
+        src="./scripts/apartments.js">
+    </script>
+
+</body>
+
+</html>

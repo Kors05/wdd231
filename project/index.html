@@ -1,164 +1,302 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EcoFriendly Homes | Website Site Plan</title>
-
-    <meta name="description" content="Site plan for the EcoFriendly Homes website project featuring serviced short-let apartments in Abuja.">
+    <meta name="description"
+        content="Discover comfortable short-stay apartments in Abuja with practical eco-friendly features, reliable amenities, and easy booking.">
     <meta name="author" content="Emmanuel Eze">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:title"
+        content="EcoFriendly Homes | Sustainable Short-Stay Apartments">
+    <meta property="og:description"
+        content="Discover comfortable short-stay apartments in Abuja with practical eco-friendly features, reliable amenities, and easy booking.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/logo.svg">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#2f6f55">
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>EcoFriendly Homes | Sustainable Short-Stay Apartments</title>
 </head>
 
 <body>
 
-<header>
-    <h1>EcoFriendly Homes Website Project Site Plan</h1>
-</header>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-<main>
+    <header class="site-header">
+        <div class="header-inner">
 
-<section>
-    <h2>Site Name</h2>
+            <a class="brand" href="./index.html">
+                <img src="./images/logo.svg" alt="" width="44" height="44">
+                <span>EcoFriendly Homes</span>
+            </a>
 
-    <h3>EcoFriendly Homes</h3>
+            <button class="nav-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-nav">
+                ☰
+                <span class="sr-only">Menu</span>
+            </button>
 
-    <p>
-        EcoFriendly Homes is a luxury short-let serviced apartment company located in Abuja,
-        Nigeria. The name was selected because it reflects the company's focus on providing
-        comfortable, modern, environmentally conscious accommodation equipped with smart home
-        technology and premium hospitality services.
-    </p>
+            <nav aria-label="Primary navigation">
+                <ul class="nav-list" id="primary-nav">
 
-    <p><strong>Optional Domain:</strong> ecofriendlyhomes.ng</p>
-</section>
+                    <li>
+                        <a class="active" href="./index.html">
+                            Home
+                        </a>
+                    </li>
 
-<section>
-    <h2>Site Purpose</h2>
+                    <li>
+                        <a href="./apartments.html">
+                            Our Stays
+                        </a>
+                    </li>
 
-    <p>
-        The website will showcase EcoFriendly Homes' serviced apartments, allowing visitors
-        to explore available accommodations, amenities, apartment galleries, pricing,
-        locations, and booking information. The website will also provide contact
-        information and highlight the company's commitment to luxury, comfort, sustainability,
-        and smart living.
-    </p>
-</section>
+                    <li>
+                        <a href="./contact.html">
+                            Book a Stay
+                        </a>
+                    </li>
 
-<section>
-    <h2>Target Audience</h2>
+                </ul>
+            </nav>
 
-    <ul>
-        <li>Business travelers</li>
-        <li>Tourists visiting Abuja</li>
-        <li>Families</li>
-        <li>Corporate organizations</li>
-        <li>Vacation guests</li>
-        <li>Expatriates</li>
-    </ul>
-</section>
+        </div>
+    </header>
 
-<section>
-    <h2>Scenarios</h2>
+    <main id="main-content">
 
-    <ul>
-        <li>Which serviced apartment is available for my preferred travel dates, and what amenities are included?</li>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
 
-        <li>How much does it cost to stay at EcoFriendly Homes, and how can I make a reservation?</li>
+                <div>
+                    <p class="eyebrow">
+                        Stay comfortably. Live responsibly.
+                    </p>
 
-        <li>Does the apartment provide Wi-Fi, backup power, housekeeping, and smart security systems?</li>
-    </ul>
-</section>
+                    <h1>
+                        Find a greener place to call home for a while.
+                    </h1>
 
-<section>
-    <h2>Color Scheme</h2>
+                    <p>
+                        EcoFriendly Homes connects guests with thoughtfully
+                        selected serviced apartments in Abuja. Browse flexible
+                        stays, compare useful amenities, and request a booking
+                        in a few simple steps.
+                    </p>
 
-    <table>
-        <tr>
-            <th>Color</th>
-            <th>Hex Code</th>
-            <th>Usage</th>
-        </tr>
+                    <div class="actions">
+                        <a class="btn" href="./apartments.html">
+                            Explore our stays
+                        </a>
 
-        <tr>
-            <td>Forest Green</td>
-            <td>#2E7D32</td>
-            <td>Header, navigation, buttons, headings, footer</td>
-        </tr>
+                        <a class="btn secondary" href="./contact.html">
+                            Plan a stay
+                        </a>
+                    </div>
 
-        <tr>
-            <td>Sky Blue</td>
-            <td>#4FC3F7</td>
-            <td>Links, icons, call-to-action buttons, highlights</td>
-        </tr>
+                    <p id="property-count" class="small">
+                        Loading our stays…
+                    </p>
+                </div>
 
-        <tr>
-            <td>White</td>
-            <td>#FFFFFF</td>
-            <td>Page background and content sections</td>
-        </tr>
+                <div class="hero-card">
+                    <img src="./images/apartment-3.svg"
+                        alt="Modern eco-friendly serviced apartment illustration"
+                        width="800"
+                        height="500">
+                </div>
 
-        <tr>
-            <td>Dark Gray</td>
-            <td>#333333</td>
-            <td>Body text and paragraphs</td>
-        </tr>
-    </table>
-</section>
+            </div>
+        </section>
 
-<section>
-    <h2>Typography</h2>
+        <!-- Features Section -->
+        <section class="section alt">
+            <div class="container">
 
-    <ul>
-        <li><strong>Poppins</strong> — Headings, navigation menu, hero section, buttons.</li>
+                <div class="section-heading">
 
-        <li><strong>Roboto</strong> — Body text, descriptions, forms, and general content.</li>
-    </ul>
-</section>
+                    <div>
+                        <p class="eyebrow">
+                            Why EcoFriendly Homes?
+                        </p>
 
-<section id="wireframe">
-    <h2>Wireframe</h2>
+                        <h2>
+                            A practical approach to better short stays.
+                        </h2>
+                    </div>
 
-    <p>
-        The following hand-drawn wireframes illustrate the planned layout for
-        the EcoFriendly Homes website in both mobile and desktop views.
-    </p>
+                    <p>
+                        We focus on useful comfort rather than unnecessary
+                        complexity.
+                    </p>
 
-    <h3>Mobile View</h3>
-    <img src="images/mobile.jfif"
-         alt="Hand-drawn mobile wireframe for EcoFriendly Homes"
-         class="wireframe">
+                </div>
 
-    <h3>Desktop View</h3>
-    <img src="images/desktop.jfif"
-         alt="Hand-drawn desktop wireframe for EcoFriendly Homes"
-         class="wireframe">
-</section>
-<section>
-    <h2>Reason for Choosing this Project</h2>
+                <div class="feature-grid">
 
-    <p>
-        I selected EcoFriendly Homes because my company, ZectaBridge, recently completed the
-        finishing work, smart systems integration, and electrical installations for one of
-        their serviced apartment locations in Abuja. Since the company currently does not have
-        an official website, this project gives me the opportunity to design a professional
-        website prototype that showcases their apartments and services while demonstrating the
-        web development skills I have gained throughout this course.
-    </p>
-</section>
+                    <article class="feature">
 
-</main>
+                        <div class="feature-icon" aria-hidden="true">
+                            🌱
+                        </div>
 
-<footer>
-    <p>&copy; 2026 Emmanuel Eze | WDD 231 Website Project Site Plan</p>
-</footer>
+                        <h3>
+                            Eco-minded
+                        </h3>
+
+                        <p>
+                            Selected properties highlight features such as
+                            solar backup, efficient water heating, and access
+                            to green spaces.
+                        </p>
+
+                    </article>
+
+                    <article class="feature">
+
+                        <div class="feature-icon" aria-hidden="true">
+                            🏠
+                        </div>
+
+                        <h3>
+                            Comfort first
+                        </h3>
+
+                        <p>
+                            Compare apartment type, guest capacity, location,
+                            price, and a key amenity.
+                        </p>
+
+                    </article>
+
+                    <article class="feature">
+
+                        <div class="feature-icon" aria-hidden="true">
+                            🤝
+                        </div>
+
+                        <h3>
+                            Simple booking
+                        </h3>
+
+                        <p>
+                            Tell us your dates and preferences through a
+                            straightforward accessible booking form.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Callout Section -->
+        <section class="section">
+            <div class="container">
+
+                <div class="notice">
+                    <strong>Planning a stay?</strong>
+                    Browse properties and use the heart button to save
+                    favourites in this browser.
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <div class="footer-brand">
+                    <img src="./images/logo.svg"
+                        alt=""
+                        width="38"
+                        height="38">
+
+                    EcoFriendly Homes
+                </div>
+
+                <p class="small">
+                    Comfortable short-stay apartments with practical
+                    eco-friendly features in Abuja.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h2 style="font-size: 1rem;">
+                    Explore
+                </h2>
+
+                <div class="footer-links">
+
+                    <a href="./index.html">
+                        Home
+                    </a>
+
+                    <a href="./apartments.html">
+                        Our Stays
+                    </a>
+
+                    <a href="./contact.html">
+                        Book a Stay
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h2 style="font-size: 1rem;">
+                    Project resources
+                </h2>
+
+                <div class="footer-links">
+
+                    <a href="./attributions.html">
+                        Attributions
+                    </a>
+
+                    <a href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="noopener">
+                        Project Video
+                    </a>
+
+                </div>
+
+                <p class="small">
+                    © <span id="year"></span>
+                    EcoFriendly Homes · Emmanuel Eze
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="module" src="./scripts/common.js"></script>
+    <script type="module" src="./scripts/home.js"></script>
 
 </body>
+
 </html>

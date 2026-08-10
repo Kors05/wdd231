@@ -1,0 +1,1 @@
+export async function loadApartments(){const response=await fetch("./data/apartments.json");if(!response.ok)throw new Error(`Data request failed: ${response.status}`);return await response.json()}export function formatNaira(value){return new Intl.NumberFormat("en-NG",{style:"currency",currency:"NGN",maximumFractionDigits:0}).format(value)}
