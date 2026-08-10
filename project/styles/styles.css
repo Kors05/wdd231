@@ -119,6 +119,7 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 18px;
+    flex-wrap: wrap;
 }
 
 
@@ -162,14 +163,12 @@ button {
     margin: 0;
     display: none;
     flex-direction: column;
-    gap: 4px;
-    width: 100%;
+    gap: 0;
 }
 
 .nav-list.open {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .nav-list li {
@@ -192,7 +191,35 @@ button {
     color: var(--dark);
 }
 
+@media (max-width: 639px) {
 
+    .header-inner {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .header-inner nav {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .nav-list.open {
+        width: 100%;
+    }
+
+    .nav-list a {
+        width: 100%;
+        padding: 18px 24px;
+        border-radius: 0;
+        border-top: 1px solid var(--border);
+        font-size: 1.1rem;
+    }
+
+    .nav-list a.active {
+        background: var(--dark);
+        color: var(--white);
+    }
+    }
 /* ================================
    HERO
    ================================ */
