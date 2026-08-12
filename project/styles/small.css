@@ -1,69 +1,134 @@
-:root{
-    --primary:#2E7D32;
-    --secondary:#4FC3F7;
-    --dark:#333333;
-    --light:#ffffff;
+/* =========================================================
+   ECOFRIENDLY HOMES — BASE / MOBILE STYLES
+   ========================================================= */
+
+:root {
+    --green: #2f6f55;
+    --primary: #2e7d32;
+    --secondary: #4fc3f7;
+    --dark: #1f4e3a;
+    --light: #e8f3ed;
+    --cream: #fbfaf6;
+    --ink: #1f2924;
+    --muted: #5d6963;
+    --white: #ffffff;
+    --border: #d9e3dd;
+    --radius: 18px;
+    --shadow: 0 12px 35px rgba(31, 78, 58, 0.12);
 }
 
-body{
-    margin:0;
-    font-family:'Roboto',sans-serif;
-    background:var(--light);
-    color:var(--dark);
-    line-height:1.6;
+/* ================================
+   GLOBAL STYLES
+   ================================ */
+
+* {
+    box-sizing: border-box;
 }
 
-header,footer{
-    background:var(--primary);
-    color:white;
-    text-align:center;
-    padding:1rem;
+html {
+    scroll-behavior: smooth;
 }
 
-main{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
 }
 
-h1,h2,h3{
-    font-family:'Poppins',sans-serif;
-    color:var(--primary);
+section {
+    margin-bottom: 2rem;
 }
 
-header h1,
-footer{
-    color:white;
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
 
-section{
-    margin-bottom:2rem;
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+    line-height: 1.15;
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-table,th,td{
-    border:1px solid #ccc;
+a {
+    color: var(--dark);
 }
 
-th{
-    background:var(--secondary);
-    color:white;
-    padding:10px;
+button,
+input,
+select,
+textarea {
+    font: inherit;
 }
 
-td{
-    padding:10px;
+button {
+    cursor: pointer;
 }
 
-pre{
-    background:#f4f4f4;
-    padding:15px;
-    overflow:auto;
+:focus-visible {
+    outline: 3px solid #d69d2e;
+    outline-offset: 3px;
 }
+
+/* ================================
+   SITE PLAN
+   ================================ */
+
+.site-plan-page header,
+.site-plan-page footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+.site-plan-page header h1,
+.site-plan-page footer {
+    color: var(--white);
+}
+
+.site-plan-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.site-plan-page table,
+.site-plan-page th,
+.site-plan-page td {
+    border: 1px solid #ccc;
+}
+
+.site-plan-page th {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 10px;
+}
+
+.site-plan-page td {
+    padding: 10px;
+}
+
+.site-plan-page pre {
+    background: #f4f4f4;
+    padding: 15px;
+    overflow: auto;
+}
+
+/* ================================
+   WIREFRAME
+   ================================ */
+
 #wireframe {
     text-align: center;
     margin: 2rem 0;

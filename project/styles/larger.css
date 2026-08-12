@@ -1,63 +1,6 @@
-:root {
-    --green: #2f6f55;
-    --dark: #1f4e3a;
-    --light: #e8f3ed;
-    --cream: #fbfaf6;
-    --ink: #1f2924;
-    --muted: #5d6963;
-    --white: #fff;
-    --border: #d9e3dd;
-    --radius: 18px;
-    --shadow: 0 12px 35px rgba(31, 78, 58, 0.12);
-}
-
-
-/* ================================
-   GLOBAL STYLES
-   ================================ */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    color: var(--ink);
-    background: var(--cream);
-    line-height: 1.6;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-a {
-    color: var(--dark);
-}
-
-button,
-input,
-select,
-textarea {
-    font: inherit;
-}
-
-button {
-    cursor: pointer;
-}
-
-:focus-visible {
-    outline: 3px solid #d69d2e;
-    outline-offset: 3px;
-}
-
+/* =========================================================
+   ECOFRIENDLY HOMES — COMPONENTS / RESPONSIVE STYLES
+   ========================================================= */
 
 /* ================================
    ACCESSIBILITY
@@ -89,9 +32,8 @@ button {
     border: 0;
 }
 
-
 /* ================================
-   CONTAINER
+   CONTAINERS
    ================================ */
 
 .container,
@@ -99,7 +41,6 @@ button {
     width: min(1120px, calc(100% - 32px));
     margin: auto;
 }
-
 
 /* ================================
    HEADER
@@ -111,6 +52,9 @@ button {
     z-index: 20;
     background: rgba(251, 250, 246, 0.96);
     border-bottom: 1px solid var(--border);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
 }
 
 .header-inner {
@@ -121,7 +65,6 @@ button {
     gap: 18px;
     flex-wrap: wrap;
 }
-
 
 /* ================================
    BRAND
@@ -140,9 +83,8 @@ button {
     width: 44px;
 }
 
-
 /* ================================
-   HAMBURGER MENU
+   NAVIGATION
    ================================ */
 
 .nav-toggle {
@@ -151,11 +93,6 @@ button {
     border-radius: 10px;
     padding: 9px 12px;
 }
-
-
-/* ================================
-   NAVIGATION
-   ================================ */
 
 .nav-list {
     list-style: none;
@@ -191,35 +128,6 @@ button {
     color: var(--dark);
 }
 
-@media (max-width: 639px) {
-
-    .header-inner {
-        width: 100%;
-        padding: 0 16px;
-    }
-
-    .header-inner nav {
-        flex-basis: 100%;
-        width: 100%;
-    }
-
-    .nav-list.open {
-        width: 100%;
-    }
-
-    .nav-list a {
-        width: 100%;
-        padding: 18px 24px;
-        border-radius: 0;
-        border-top: 1px solid var(--border);
-        font-size: 1.1rem;
-    }
-
-    .nav-list a.active {
-        background: var(--dark);
-        color: var(--white);
-    }
-}
 /* ================================
    HERO
    ================================ */
@@ -242,12 +150,6 @@ button {
     font-size: 0.8rem;
 }
 
-h1,
-h2,
-h3 {
-    line-height: 1.15;
-}
-
 h1 {
     font-size: clamp(2.2rem, 8vw, 4.3rem);
     margin: 0 0 18px;
@@ -263,11 +165,6 @@ h2 {
     max-width: 650px;
 }
 
-
-/* ================================
-   HERO CARD
-   ================================ */
-
 .hero-card {
     background: var(--light);
     border-radius: 28px;
@@ -279,7 +176,6 @@ h2 {
     border-radius: 18px;
     width: 100%;
 }
-
 
 /* ================================
    BUTTONS
@@ -310,7 +206,6 @@ h2 {
     color: var(--dark);
 }
 
-
 /* ================================
    SECTIONS
    ================================ */
@@ -336,7 +231,6 @@ h2 {
     max-width: 600px;
 }
 
-
 /* ================================
    FEATURES
    ================================ */
@@ -358,7 +252,6 @@ h2 {
     font-size: 1.8rem;
 }
 
-
 /* ================================
    PAGE HERO
    ================================ */
@@ -366,7 +259,6 @@ h2 {
 .page-hero {
     padding: 44px 0 28px;
 }
-
 
 /* ================================
    FILTERS
@@ -381,7 +273,6 @@ h2 {
     border: 1px solid var(--border);
     border-radius: var(--radius);
 }
-
 
 /* ================================
    FORM FIELDS
@@ -407,7 +298,6 @@ textarea {
     color: var(--ink);
 }
 
-
 /* ================================
    APARTMENT GRID
    ================================ */
@@ -417,11 +307,6 @@ textarea {
     grid-template-columns: 1fr;
     gap: 20px;
 }
-
-
-/* ================================
-   APARTMENT CARD
-   ================================ */
 
 .card {
     background: #fff;
@@ -484,7 +369,6 @@ textarea {
     font-size: 0.9rem;
 }
 
-
 /* ================================
    EMPTY RESULTS
    ================================ */
@@ -495,7 +379,6 @@ textarea {
     background: #fff;
     border-radius: var(--radius);
 }
-
 
 /* ================================
    MODAL
@@ -524,7 +407,6 @@ textarea {
     font-size: 1.6rem;
 }
 
-
 /* ================================
    FORMS
    ================================ */
@@ -546,7 +428,6 @@ textarea {
     background: var(--light);
 }
 
-
 /* ================================
    FOOTER
    ================================ */
@@ -555,67 +436,43 @@ footer {
     background: #18382b;
     color: #eaf5ef;
     margin-top: 60px;
+    padding: 1rem;
+    text-align: center;
 }
 
 .footer-inner {
-    width: min(1675px, calc(100% - 64px));
-    margin: 0 auto;
-    padding: 78px 0 76px;
+    padding: 40px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 42px;
-    align-items: start;
+    gap: 24px;
 }
 
-.footer-inner > div {
-    min-width: 0;
+.footer-heading {
+    margin: 0 0 18px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: var(--primary);
 }
 
 .footer-inner a {
     color: #fff;
-    text-decoration: underline;
-    text-underline-offset: 3px;
 }
 
 .footer-brand {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #fff;
     font-weight: 800;
-    font-size: 1.08rem;
 }
 
 .footer-brand img {
-    width: 58px;
-    height: 58px;
-}
-
-.footer-inner > div:first-child .small {
-    max-width: 600px;
-    margin: 22px 0 0;
-    text-align: center;
-}
-
-.footer-inner h2,
-.footer-heading {
-    margin: 18px 0 24px;
-    color: #2e7d32;
-    font-size: 1.05rem;
-    font-weight: 800;
-    text-align: center;
+    width: 38px;
 }
 
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px 30px;
-}
-
-.footer-inner > div:last-child .small {
-    margin: 28px 0 0;
-    text-align: center;
+    gap: 14px 20px;
 }
 
 .small {
@@ -627,25 +484,39 @@ footer {
     padding-left: 20px;
 }
 
+/* ================================
+   MOBILE NAVIGATION
+   ================================ */
 
 @media (max-width: 639px) {
 
-    .footer-inner {
-        padding: 48px 0 52px;
-        grid-template-columns: 1fr;
-        gap: 28px;
+    .header-inner {
+        width: 100%;
+        padding: 0 16px;
     }
 
-    .footer-brand {
-        justify-content: center;
+    .header-inner nav {
+        flex-basis: 100%;
+        width: 100%;
     }
 
-    .footer-inner > div:first-child .small,
-    .footer-inner > div:last-child .small {
-        text-align: center;
+    .nav-list.open {
+        width: 100%;
+    }
+
+    .nav-list a {
+        width: 100%;
+        padding: 18px 24px;
+        border-radius: 0;
+        border-top: 1px solid var(--border);
+        font-size: 1.1rem;
+    }
+
+    .nav-list a.active {
+        background: var(--dark);
+        color: var(--white);
     }
 }
-
 
 /* ================================
    TABLET
@@ -689,10 +560,9 @@ footer {
     }
 
     .footer-inner {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1.2fr 1fr 1fr;
     }
 }
-
 
 /* ================================
    LARGE SCREENS
@@ -712,7 +582,6 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 
 /* ================================
    REDUCED MOTION
