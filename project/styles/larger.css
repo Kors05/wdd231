@@ -298,6 +298,16 @@ textarea {
     color: var(--ink);
 }
 
+/* CONTACT / BOOKING PAGE */
+
+.booking-section {
+    padding-top: 10px;
+}
+
+.additional-request {
+    margin-top: 16px;
+}
+
 /* ================================
    APARTMENT GRID
    ================================ */
